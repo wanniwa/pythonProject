@@ -31,5 +31,5 @@ output_json = json.dumps(output, indent=4, ensure_ascii=False)
 # 输出JSON数据
 print(output_json)
 output_file_path = os.path.splitext(file_path)[0] + '.json'
-with open(output_file_path, 'w') as f:
+with open(output_file_path, 'w', encoding='utf-8') as f:
     f.write(output_json)

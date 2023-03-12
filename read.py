@@ -1,9 +1,10 @@
 # 读取JSON数据
 import json
 import os
+import sys
 
-file_path = '/Users/wangning/Downloads/andre_route_p.json'
-with open(file_path, 'r', encoding='utf-8') as f:
+file_path = sys.argv[1]
+with open(file_path, 'r') as f:
     data = json.load(f)
 
 # 转换为原始格式

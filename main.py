@@ -5,12 +5,10 @@ import os
 # file_path = '/Users/wangning/Downloads/andre_route_p.rpy'
 
 import sys
-if len(sys.argv) == 2:
-    # 通过命令行参数获取文件路径
-    file_path = sys.argv[1]
-else:
-    # 通过拖动文件获取文件路径（仅在 macOS 上有效）
-    file_path = os.path.abspath(sys.argv[1])
+
+# 通过命令行参数获取文件路径
+file_path = sys.argv[1]
+
 # 读取数据文件
 with open(file_path, 'r', encoding='utf-8') as f:
     data = f.read()
